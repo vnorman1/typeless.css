@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeless.css - Revolutionary Classless CSS Framework</title>
+    <link rel="stylesheet" href="Typeless.css">
+</head>
+<body>
+    <h3>
+        <button onclick="switchLanguage('en')" id="btn-en">English</button>
+        <button onclick="switchLanguage('hu')" id="btn-hu">Magyar</button>
+    </h3>
+
+    <header>
+        <h1 data-i18n="header.title">Typeless.css</h1>
+        <p data-i18n="header.subtitle">Revolutionary Classless CSS Framework</p>
+        <p data-i18n="header.description">Beautiful, modern web design without a single CSS class. Zero configuration, maximum impact.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2 data-i18n="overview.title">What is Typeless.css?</h2>
+            
+            <p data-i18n="overview.intro">Typeless.css is a revolutionary approach to web design that combines Swiss design precision with Japanese minimalism. It automatically styles every HTML element to create beautiful, professional-looking websites without requiring any CSS classes.</p>            <section>
+                <h4 data-i18n="stats.title">Statistics</h4>
+                <dl>
+                    <dt><strong>0</strong></dt>
+                    <dd data-i18n="stats.classes">CSS Classes Needed</dd>
+                    
+                    <dt><strong>4KB</strong></dt>
+                    <dd data-i18n="stats.size">Gzipped Size</dd>
+                    
+                    <dt><strong>0min</strong></dt>
+                    <dd data-i18n="stats.setup">Setup Time</dd>
+                    
+                    <dt><strong>100%</strong></dt>
+                    <dd data-i18n="stats.responsive">Responsive</dd>
+                </dl>
+            </section>
+        </section>        <section>
+            <h2 data-i18n="features.title">Key Features</h2>
+            
+            <article>
+                <h3 data-i18n="features.typography.title">Perfect Typography</h3>
+                <p data-i18n="features.typography.desc">Mathematical precision with Golden Ratio-based type scale, optimal line heights, and premium font stack.</p>
+            </article>
+            
+            <article>
+                <h3 data-i18n="features.responsive.title">Fully Responsive</h3>
+                <p data-i18n="features.responsive.desc">Mobile-first design that looks perfect on all devices without media query configuration.</p>
+            </article>
+            
+            <article>
+                <h3 data-i18n="features.modern.title">Modern Effects</h3>
+                <p data-i18n="features.modern.desc">Gradient texts, smooth animations, 3D hover effects, and elegant shadows built-in.</p>
+            </article>
+            
+            <article>
+                <h3 data-i18n="features.semantic.title">Semantic HTML</h3>
+                <p data-i18n="features.semantic.desc">Works with clean, semantic HTML5. No framework-specific markup required.</p>
+            </article>
+            
+            <article>
+                <h3 data-i18n="features.accessibility.title">Accessibility First</h3>
+                <p data-i18n="features.accessibility.desc">WCAG compliant with proper focus states, color contrast, and screen reader support.</p>
+            </article>
+            
+            <article>
+                <h3 data-i18n="features.performance.title">High Performance</h3>
+                <p data-i18n="features.performance.desc">Minimal CSS, optimized selectors, and reduced bundle size for lightning-fast loading.</p>
+            </article>        </section>
+
+        <section>
+            <h2 data-i18n="showcase.title">Content Showcase</h2>
+            <p data-i18n="showcase.description">Typeless.css automatically styles all HTML elements beautifully. Here's a comprehensive showcase of different content types and media elements.</p>
+            
+            <article>
+                <h3 data-i18n="showcase.media.title">Media Elements</h3>
+                
+                <h4 data-i18n="showcase.images.title">Images & Figures</h4>
+                <img src="https://placehold.co/800x400/2563eb/ffffff?text=Responsive+Hero+Image" alt="Responsive hero image showcase" />
+                <p data-i18n="showcase.images.desc">Images automatically scale and maintain aspect ratios across all devices.</p>
+                
+                <figure>
+                    <img src="https://placehold.co/600x300/6366f1/ffffff?text=Article+Image" alt="Article illustration" />
+                    <figcaption data-i18n="showcase.images.caption">Figures with captions are perfectly styled for editorial content.</figcaption>
+                </figure>
+
+                <h4 data-i18n="showcase.multimedia.title">Video & Audio</h4>
+                <video controls poster="https://placehold.co/600x400/8b5cf6/ffffff?text=Video+Content">
+                    <source src="#" type="video/mp4">
+                    <p data-i18n="showcase.multimedia.fallback">Your browser doesn't support HTML5 video.</p>
+                </video>
+                
+                <audio controls style="width: 100%; margin: 1rem 0;">
+                    <source src="#" type="audio/mpeg">
+                    <p data-i18n="showcase.multimedia.audiofallback">Your browser doesn't support HTML5 audio.</p>
+                </audio>
+            </article>
+
+            <article>
+                <h3 data-i18n="showcase.forms.title">Forms & Interactions</h3>
+                <form>
+                    <fieldset>
+                        <legend data-i18n="showcase.forms.legend">Sample Contact Form</legend>
+                        
+                        <label for="showcase-name" data-i18n="showcase.forms.name">Full Name:</label>
+                        <input type="text" id="showcase-name" placeholder="John Doe" required>
+                        
+                        <label for="showcase-email" data-i18n="showcase.forms.email">Email Address:</label>
+                        <input type="email" id="showcase-email" placeholder="john@example.com" required>
+                        
+                        <label for="showcase-category" data-i18n="showcase.forms.category">Category:</label>
+                        <select id="showcase-category">
+                            <option value="">Select a category</option>
+                            <option value="general" data-i18n="showcase.forms.general">General Inquiry</option>
+                            <option value="support" data-i18n="showcase.forms.support">Technical Support</option>
+                            <option value="feedback" data-i18n="showcase.forms.feedback">Feedback</option>
+                        </select>
+                        
+                        <label for="showcase-message" data-i18n="showcase.forms.message">Message:</label>
+                        <textarea id="showcase-message" rows="4" placeholder="Your message here..."></textarea>
+                        
+                        <fieldset>
+                            <legend data-i18n="showcase.forms.preferences">Contact Preferences</legend>
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span data-i18n="showcase.forms.newsletter">Subscribe to our newsletter</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="contact-method" value="email" checked>
+                                <span data-i18n="showcase.forms.contactemail">Contact by email</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="contact-method" value="phone">
+                                <span data-i18n="showcase.forms.contactphone">Contact by phone</span>
+                            </label>
+                        </fieldset>
+                        
+                        <button type="submit" data-i18n="showcase.forms.submit">Send Message</button>
+                        <button type="reset" data-i18n="showcase.forms.reset">Clear Form</button>
+                    </fieldset>
+                </form>
+            </article>
+
+            <article>
+                <h3 data-i18n="showcase.data.title">Data Visualization</h3>
+                
+                <h4 data-i18n="showcase.progress.title">Progress & Metrics</h4>
+                <p data-i18n="showcase.progress.loading">Loading progress:</p>
+                <progress value="75" max="100">75%</progress>
+                
+                <p data-i18n="showcase.progress.performance">Performance score:</p>
+                <meter value="9.2" min="0" max="10" optimum="10">9.2 out of 10</meter>
+                
+                <h4 data-i18n="showcase.gallery.title">Image Gallery</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
+                    <figure>
+                        <img src="https://placehold.co/400x300/f59e0b/ffffff?text=Design+1" alt="Design showcase 1" />
+                        <figcaption data-i18n="showcase.gallery.design1">Modern UI Design</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x300/ef4444/ffffff?text=Design+2" alt="Design showcase 2" />
+                        <figcaption data-i18n="showcase.gallery.design2">Typography Focus</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x300/10b981/ffffff?text=Design+3" alt="Design showcase 3" />
+                        <figcaption data-i18n="showcase.gallery.design3">Color Harmony</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x300/8b5cf6/ffffff?text=Design+4" alt="Design showcase 4" />
+                        <figcaption data-i18n="showcase.gallery.design4">Layout Perfection</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h3 data-i18n="showcase.semantic.title">Semantic Elements</h3>
+                
+                <h4 data-i18n="showcase.text.title">Rich Text Elements</h4>
+                <p data-i18n="showcase.text.sample">This paragraph demonstrates various inline elements: <strong>bold text</strong>, <em>italic emphasis</em>, <mark>highlighted content</mark>, <small>fine print</small>, <code>inline code</code>, and <a href="#">styled links</a>.</p>
+                
+                <p data-i18n="showcase.text.technical">Technical content: <abbr title="Cascading Style Sheets">CSS</abbr> variables like <var>--primary-color</var> can be used. Mathematical expressions: E=mc<sup>2</sup>, H<sub>2</sub>O.</p>
+                
+                <p data-i18n="showcase.text.keyboard">Keyboard shortcuts: Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your work.</p>
+                
+                <h4 data-i18n="showcase.time.title">Time & Contact</h4>
+                <p data-i18n="showcase.time.event">The next release is scheduled for <time datetime="2025-07-15T10:00">July 15th, 2025 at 10:00 AM</time>.</p>
+                
+                <address>
+                    <strong>Typeless CSS</strong><br>
+                    <span data-i18n="showcase.contact.address">123 Design Avenue<br>Web City, Internet 54321</span><br>
+                    <a href="">hello@typeless.css</a><br>
+                    <a href="">+1 (000) 000-000</a>
+                </address>
+
+                <h4 data-i18n="showcase.interactive.title">Interactive Elements</h4>
+                <details>
+                    <summary data-i18n="showcase.interactive.summary">Click to reveal additional information</summary>
+                    <p data-i18n="showcase.interactive.content">This expandable section demonstrates the details/summary elements. Perfect for FAQs, additional information, or progressive disclosure of content.</p>
+                    <img src="https://placehold.co/400x200/6366f1/ffffff?text=Hidden+Content" alt="Content revealed in details" />
+                </details>            </article>
+        </section>
+
+        <section>
+            <h2 data-i18n="demo.title">Live Demo</h2>
+            
+            <aside>
+                <h3 data-i18n="demo.subtitle">See Typeless.css in Action</h3>
+                <p data-i18n="demo.description">This entire page is styled with Typeless.css! No custom classes were needed for the layout, typography, or components.</p>
+                  <h4 data-i18n="demo.elements">HTML Elements Showcase:</h4>
+                
+                <h5 data-i18n="demo.typography">Typography Hierarchy</h5>
+                <h1 data-i18n="demo.heading1">Heading 1 - Gradient Effect</h1>
+                <h2 data-i18n="demo.heading2">Heading 2 - With Underline</h2>
+                <h3 data-i18n="demo.heading3">Heading 3 - Clean & Bold</h3>
+                <h4 data-i18n="demo.heading4">Heading 4 - Subtle</h4>
+                <h5 data-i18n="demo.heading5">Heading 5 - Refined</h5>
+                <h6 data-i18n="demo.heading6">Heading 6 - Small Caps</h6>
+                
+                <p data-i18n="demo.paragraph">Regular paragraph with <strong>bold text</strong>, <em>italic text</em>, <mark>highlighted text</mark>, and <a href="#">beautiful links</a>.</p>
+                
+                <blockquote>
+                    <p data-i18n="demo.quote">"The best design is invisible – only the content speaks."</p>
+                    <cite data-i18n="demo.author">Dieter Rams</cite>
+                </blockquote>
+                
+                <ul>
+                    <li data-i18n="demo.list1">Beautiful bullet points</li>
+                    <li data-i18n="demo.list2">Perfect spacing</li>
+                    <li data-i18n="demo.list3">Elegant typography</li>
+                </ul>
+                
+                <ol>
+                    <li data-i18n="demo.ol1">Numbered lists</li>
+                    <li data-i18n="demo.ol2">Mathematical precision</li>
+                    <li data-i18n="demo.ol3">Zero configuration</li>
+                </ol>
+                  <code>inline.code()</code> <span data-i18n="demo.code">and code blocks:</span>
+                  <pre><code>&lt;link rel="stylesheet" href="Typeless.css"&gt;
+&lt;h1&gt;Beautiful Website&lt;/h1&gt;
+&lt;p&gt;That's it! No classes needed.&lt;/p&gt;</code></pre>                <h5 data-i18n="demo.media">Media Elements</h5>
+                
+                <h6 data-i18n="demo.images">Images</h6>
+                <img src="https://placehold.co/600x400/2563eb/ffffff?text=Hero+Image" alt="Hero placeholder image" />
+                <p data-i18n="demo.imageDesc">Beautiful responsive images with automatic styling</p>
+                
+                <figure>
+                    <img src="https://placehold.co/400x300/6366f1/ffffff?text=Figure+Image" alt="Figure placeholder" />
+                    <figcaption data-i18n="demo.figcaption">Image with caption using figure and figcaption elements</figcaption>
+                </figure>
+
+                <h6 data-i18n="demo.video">Video</h6>
+                <video controls poster="https://placehold.co/600x400/8b5cf6/ffffff?text=Video+Poster">
+                    <source src="#" type="video/mp4">
+                    <p data-i18n="demo.videoFallback">Your browser doesn't support HTML5 video. Here is a <a href="#">link to the video</a> instead.</p>
+                </video>
+
+                <h6 data-i18n="demo.audio">Audio</h6>
+                <audio controls>
+                    <source src="#" type="audio/mpeg">
+                    <p data-i18n="demo.audioFallback">Your browser doesn't support HTML5 audio.</p>
+                </audio>                <h6 data-i18n="demo.forms">Forms</h6>
+                <form>
+                    <fieldset>
+                        <legend data-i18n="demo.formLegend">Contact Form</legend>
+                        
+                        <label for="name" data-i18n="demo.formName">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
+                        <label for="email" data-i18n="demo.formEmail">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        
+                        <label for="subject" data-i18n="demo.formSubject">Subject:</label>
+                        <select id="subject" name="subject">
+                            <option value="" data-i18n="demo.formSubjectDefault">Choose a subject</option>
+                            <option value="general" data-i18n="demo.formGeneral">General Inquiry</option>
+                            <option value="support" data-i18n="demo.formSupport">Support</option>
+                            <option value="feedback" data-i18n="demo.formFeedback">Feedback</option>
+                        </select>
+                        
+                        <label for="message" data-i18n="demo.formMessage">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." rows="4"></textarea>
+                        
+                        <fieldset>
+                            <legend data-i18n="demo.formPreferences">Preferences</legend>
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span data-i18n="demo.formNewsletter">Subscribe to newsletter</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="contact" value="email" checked>
+                                <span data-i18n="demo.formContactEmail">Contact by email</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="contact" value="phone">
+                                <span data-i18n="demo.formContactPhone">Contact by phone</span>
+                            </label>
+                        </fieldset>
+                        
+                        <button type="submit" data-i18n="demo.formSubmit">Send Message</button>
+                        <button type="reset" data-i18n="demo.formReset">Reset Form</button>
+                    </fieldset>
+                </form>                <h6 data-i18n="demo.interactive">Interactive Elements</h6>
+                
+                <details>
+                    <summary data-i18n="demo.detailsSummary">Click to expand more information</summary>
+                    <p data-i18n="demo.detailsContent">This is additional content that can be shown or hidden. Perfect for FAQ sections, additional details, or collapsible content areas.</p>
+                    <img src="https://placehold.co/300x200/10b981/ffffff?text=Hidden+Content" alt="Hidden content image" />
+                </details>
+
+                <h6 data-i18n="demo.progress">Progress and Meter</h6>
+                <p data-i18n="demo.progressBar">Progress bar:</p>
+                <progress value="75" max="100">75%</progress>
+                
+                <p data-i18n="demo.meter">Meter (gauge):</p>
+                <meter value="8" min="0" max="10" optimum="9">8 out of 10</meter>
+
+                <h6 data-i18n="demo.datetime">Data and Time</h6>
+                <p data-i18n="demo.event">The event will be on <time datetime="2025-12-25T09:00">Christmas Day at 9 AM</time>.</p>
+                
+                <p data-i18n="demo.currentTime">Current time: <time datetime="2025-06-08T14:30">2:30 PM, June 8th, 2025</time></p>
+
+                <h6 data-i18n="demo.address">Address and Contact</h6>
+                <address>
+                    <strong>Typeless CSS Team</strong> <br>
+                    123 Design Street <br>
+                    Web City, WC 12345 <br>
+                    <a href="">JohnDoe@typeless.css</a><br>
+                    <a href="">+0 (000) 000-000</a>
+                </address>
+
+                <h6>Keyboard and Code</h6>
+                <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy, then <kbd>Ctrl</kbd> + <kbd>V</kbd> to paste.</p>
+                
+                <p>The <code>console.log()</code> function outputs: <samp>Hello, World!</samp></p>
+                
+                <p>Use the <var>x</var> variable to store the result of <code>2 + 2 = <output>4</output></code></p>
+
+                <h6>Semantic Text Elements</h6>
+                <p>This text has <small>small text</small> and <big>emphasized text</big>.</p>
+                
+                <p><abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are web technologies.</p>
+                
+                <p>The chemical formula for water is H<sub>2</sub>O, and Einstein's famous equation is E=mc<sup>2</sup>.</p>
+                
+                <p>This is <ins>inserted text</ins> and this is <del>deleted text</del>.</p>                <h6>Enhanced Image Gallery</h6>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                    <img src="https://placehold.co/300x200/f59e0b/ffffff?text=Gallery+1" alt="Gallery image 1" />
+                    <img src="https://placehold.co/300x200/ef4444/ffffff?text=Gallery+2" alt="Gallery image 2" />
+                    <img src="https://placehold.co/300x200/10b981/ffffff?text=Gallery+3" alt="Gallery image 3" />
+                    <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=Gallery+4" alt="Gallery image 4" />
+                    <img src="https://placehold.co/300x200/3b82f6/ffffff?text=Gallery+5" alt="Gallery image 5" />
+                    <img src="https://placehold.co/300x200/f97316/ffffff?text=Gallery+6" alt="Gallery image 6" />
+                </div>
+
+                <h6>Mixed Media Showcase</h6>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                    <div>
+                        <h6>Portrait Images</h6>
+                        <img src="https://placehold.co/300x400/6366f1/ffffff?text=Portrait+Style" alt="Portrait orientation image" style="width: 100%;" />
+                        <p>Portrait-oriented images work perfectly within the responsive grid system.</p>
+                    </div>
+                    <div>
+                        <h6>Square Images</h6>
+                        <img src="https://placehold.co/300x300/8b5cf6/ffffff?text=Square+Format" alt="Square format image" style="width: 100%;" />
+                        <p>Square format images maintain their aspect ratio and look great in card layouts.</p>
+                    </div>
+                    <div>
+                        <h6>Wide Panoramic</h6>
+                        <img src="https://placehold.co/400x150/10b981/ffffff?text=Wide+Panoramic" alt="Wide panoramic image" style="width: 100%;" />
+                        <p>Wide panoramic images stretch beautifully across container widths.</p>
+                    </div>
+                </div>
+
+                <h6>Interactive Media Elements</h6>
+                <div style="margin: 2rem 0;">
+                    <h6>Image with Map Areas</h6>
+                    <img src="https://placehold.co/600x300/2563eb/ffffff?text=Interactive+Image+Map" alt="Interactive image map" usemap="#demo-map" />
+                    <map name="demo-map">
+                        <area shape="rect" coords="0,0,200,150" href="#" alt="Left section" title="Left interactive area">
+                        <area shape="rect" coords="200,0,400,150" href="#" alt="Center section" title="Center interactive area">
+                        <area shape="rect" coords="400,0,600,150" href="#" alt="Right section" title="Right interactive area">
+                    </map>
+                    <p>Image maps allow for interactive clickable areas within images.</p>
+                </div>
+            </aside>
+        </section>        <section>
+            <h2 data-i18n="comparison.title">Framework Comparison</h2>
+            
+            <table>
+                <caption data-i18n="comparison.caption">CSS Framework Feature Comparison</caption>
+                    <thead>
+                        <tr>
+                            <th data-i18n="comparison.framework">Framework</th>
+                            <th data-i18n="comparison.size">Size (Gzipped)</th>
+                            <th data-i18n="comparison.classes">Classes</th>
+                            <th data-i18n="comparison.setup">Setup Time</th>
+                            <th data-i18n="comparison.learning">Learning Curve</th>
+                            <th data-i18n="comparison.maintenance">Maintenance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bootstrap 5</td>
+                            <td>400KB</td>
+                            <td>500+</td>
+                            <td>30 min</td>
+                            <td data-i18n="comparison.medium">Medium</td>
+                            <td data-i18n="comparison.high">High</td>
+                        </tr>
+                        <tr>
+                            <td>Tailwind CSS</td>
+                            <td>200KB (purged)</td>
+                            <td>1000+</td>
+                            <td>60 min</td>
+                            <td data-i18n="comparison.steep">Steep</td>
+                            <td data-i18n="comparison.medium">Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Bulma</td>
+                            <td>250KB</td>
+                            <td>300+</td>
+                            <td>20 min</td>
+                            <td data-i18n="comparison.easy">Easy</td>
+                            <td data-i18n="comparison.medium">Medium</td>
+                        </tr>                        <tr>
+                            <td><strong>Typeless.css</strong></td>
+                            <td><strong>10KB</strong></td>
+                            <td><strong>0</strong></td>
+                            <td><strong>0 min</strong></td>
+                            <td><strong data-i18n="comparison.none">None</strong></td>
+                            <td><strong data-i18n="comparison.none">None</strong></td>
+                        </tr></tbody>
+                </table>
+        </section>        <section>
+            <h2 data-i18n="proscons.title">Advantages & Additional Benefits</h2>
+            
+            <article>
+                <h4 data-i18n="proscons.advantages">Advantages</h4>
+                <ul>
+                    <li data-i18n="proscons.pro1">Zero learning curve - just write HTML</li>
+                    <li data-i18n="proscons.pro2">Instant beautiful results</li>
+                    <li data-i18n="proscons.pro3">No class naming conflicts</li>
+                    <li data-i18n="proscons.pro4">Smaller bundle sizes</li>
+                    <li data-i18n="proscons.pro5">Perfect for prototyping</li>
+                    <li data-i18n="proscons.pro6">Content-first approach</li>
+                    <li data-i18n="proscons.pro7">Accessibility built-in</li>
+                    <li data-i18n="proscons.pro8">Future-proof semantic HTML</li>
+                    <li data-i18n="proscons.pro9">Professional design out of the box</li>
+                    <li data-i18n="proscons.pro10">Consistent visual hierarchy</li>
+                    <li data-i18n="proscons.pro11">Time-saving development</li>
+                    <li data-i18n="proscons.pro12">Clean, maintainable code</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h4 data-i18n="proscons.benefits">Additional Benefits</h4>
+                <ul>
+                    <li data-i18n="proscons.benefit1">Automatic cross-browser compatibility</li>
+                    <li data-i18n="proscons.benefit2">Print-friendly styles included</li>
+                    <li data-i18n="proscons.benefit3">Dark mode ready foundation</li>
+                    <li data-i18n="proscons.benefit4">SEO-friendly semantic structure</li>
+                    <li data-i18n="proscons.benefit5">Easy to customize with CSS variables</li>
+                    <li data-i18n="proscons.benefit6">Works great for blogs and documentation</li>
+                    <li data-i18n="proscons.benefit7">Reduces decision fatigue</li>
+                    <li data-i18n="proscons.benefit8">Perfect for rapid prototyping</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 data-i18n="usage.title">How to Use</h2>
+            
+            <h3 data-i18n="usage.step1">1. Include the CSS</h3>
+            <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/repo/typeless.css"&gt;</code></pre>
+            
+            <h3 data-i18n="usage.step2">2. Write Semantic HTML</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Beautiful Website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="Typeless.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome&lt;/h1&gt;
+        &lt;p&gt;This is automatically beautiful!&lt;/p&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Article Title&lt;/h2&gt;
+            &lt;p&gt;Your content here...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3 data-i18n="usage.step3">3. That's It!</h3>
+            <p data-i18n="usage.done">Your website is now beautifully styled with zero configuration. Add more HTML elements and they'll automatically look great!</p>
+        </section>
+
+        <section>
+            <h2 data-i18n="technical.title">Technical Details</h2>
+            
+            <dl>
+                <dt data-i18n="technical.principles">Design Principles</dt>
+                <dd data-i18n="technical.principlesDesc">Swiss typography, Japanese minimalism, mathematical spacing based on Golden Ratio</dd>
+                
+                <dt data-i18n="technical.fonts">Font Stack</dt>
+                <dd>Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif</dd>
+                
+                <dt data-i18n="technical.colors">Color Palette</dt>
+                <dd data-i18n="technical.colorsDesc">Monochromatic scale with blue accents, optimized for readability</dd>
+                
+                <dt data-i18n="technical.spacing">Spacing System</dt>
+                <dd data-i18n="technical.spacingDesc">0.25rem increments with mathematical progression</dd>
+                
+                <dt data-i18n="technical.breakpoints">Responsive Breakpoints</dt>
+                <dd>768px (tablet), 480px (mobile)</dd>
+                
+                <dt data-i18n="technical.browser">Browser Support</dt>
+                <dd data-i18n="technical.browserDesc">Modern browsers with CSS Grid and Custom Properties support</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2 data-i18n="download.title">Get Started</h2>
+              <p data-i18n="download.description">Ready to revolutionize your web development workflow? Download Typeless.css and start building beautiful websites instantly.</p>
+            
+            <section>
+                <button onclick="downloadCSS()" data-i18n="download.button">Download Typeless.css</button>
+                <button onclick="copyLink()" data-i18n="download.copy">Copy CDN Link</button>
+            </section>
+            
+            <details>
+                <summary data-i18n="download.customization">Customization Options</summary>
+                <p data-i18n="download.customDesc">While Typeless.css works perfectly out of the box, you can customize colors, fonts, and spacing by modifying the CSS custom properties at the top of the file.</p>
+                
+                <pre><code>:root {
+  --color-primary: #2563eb;        /* Change accent color */
+  --font-body: "Your Font", sans-serif;  /* Change font */
+  --content-width: 65ch;           /* Adjust content width */
+  /* ... more variables ... */
+}</code></pre>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Typeless.css. <span data-i18n="footer.rights">Open source and free to use.</span></p>
+        <p data-i18n="footer.tagline">Zero configuration, maximum impact.</p>
+    </footer>
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                "header.title": "Typeless.css",
+                "header.subtitle": "Revolutionary Classless CSS Framework",
+                "header.description": "Beautiful, modern web design without a single CSS class. Zero configuration, maximum impact.",
+                
+                "overview.title": "What is Typeless.css?",
+                "overview.intro": "Typeless.css is a revolutionary approach to web design that combines Swiss design precision with Japanese minimalism. It automatically styles every HTML element to create beautiful, professional-looking websites without requiring any CSS classes.",
+                
+                "stats.title": "Statistics",
+                "stats.classes": "CSS Classes Needed",
+                "stats.size": "Gzipped Size",
+                "stats.setup": "Setup Time",
+                "stats.responsive": "Responsive",
+                
+                "features.title": "Key Features",                "features.typography.title": "Perfect Typography",
+                "features.typography.desc": "Mathematical precision with Golden Ratio-based type scale, optimal line heights, and premium font stack.",
+                "features.responsive.title": "Fully Responsive",
+                "features.responsive.desc": "Mobile-first design that looks perfect on all devices without media query configuration.",
+                "features.modern.title": "Modern Effects",
+                "features.modern.desc": "Gradient texts, smooth animations, 3D hover effects, and elegant shadows built-in.",
+                "features.semantic.title": "Semantic HTML",
+                "features.semantic.desc": "Works with clean, semantic HTML5. No framework-specific markup required.",
+                "features.accessibility.title": "Accessibility First",
+                "features.accessibility.desc": "WCAG compliant with proper focus states, color contrast, and screen reader support.",                "features.performance.title": "High Performance",
+                "features.performance.desc": "Minimal CSS, optimized selectors, and reduced bundle size for lightning-fast loading.",
+                
+                "showcase.title": "Content Showcase",
+                "showcase.description": "Typeless.css automatically styles all HTML elements beautifully. Here's a comprehensive showcase of different content types and media elements.",
+                "showcase.media.title": "Media Elements",
+                "showcase.images.title": "Images & Figures",
+                "showcase.images.desc": "Images automatically scale and maintain aspect ratios across all devices.",
+                "showcase.images.caption": "Figures with captions are perfectly styled for editorial content.",
+                "showcase.multimedia.title": "Video & Audio",
+                "showcase.multimedia.fallback": "Your browser doesn't support HTML5 video.",
+                "showcase.multimedia.audiofallback": "Your browser doesn't support HTML5 audio.",
+                "showcase.forms.title": "Forms & Interactions",
+                "showcase.forms.legend": "Sample Contact Form",
+                "showcase.forms.name": "Full Name:",
+                "showcase.forms.email": "Email Address:",
+                "showcase.forms.category": "Category:",
+                "showcase.forms.general": "General Inquiry",
+                "showcase.forms.support": "Technical Support",
+                "showcase.forms.feedback": "Feedback",
+                "showcase.forms.message": "Message:",
+                "showcase.forms.preferences": "Contact Preferences",
+                "showcase.forms.newsletter": "Subscribe to our newsletter",
+                "showcase.forms.contactemail": "Contact by email",
+                "showcase.forms.contactphone": "Contact by phone",
+                "showcase.forms.submit": "Send Message",
+                "showcase.forms.reset": "Clear Form",
+                "showcase.data.title": "Data Visualization",
+                "showcase.progress.title": "Progress & Metrics",
+                "showcase.progress.loading": "Loading progress:",
+                "showcase.progress.performance": "Performance score:",
+                "showcase.gallery.title": "Image Gallery",
+                "showcase.gallery.design1": "Modern UI Design",
+                "showcase.gallery.design2": "Typography Focus",
+                "showcase.gallery.design3": "Color Harmony",
+                "showcase.gallery.design4": "Layout Perfection",
+                "showcase.semantic.title": "Semantic Elements",
+                "showcase.text.title": "Rich Text Elements",
+                "showcase.text.sample": "This paragraph demonstrates various inline elements: bold text, italic emphasis, highlighted content, fine print, inline code, and styled links.",
+                "showcase.text.technical": "Technical content: CSS variables like --primary-color can be used. Mathematical expressions: E=mc², H₂O.",
+                "showcase.text.keyboard": "Keyboard shortcuts: Press Ctrl + S to save your work.",
+                "showcase.time.title": "Time & Contact",
+                "showcase.time.event": "The next release is scheduled for July 15th, 2025 at 10:00 AM.",
+                "showcase.contact.address": "123 Design Avenue<br>Web City, Internet 54321",                "showcase.interactive.title": "Interactive Elements",
+                "showcase.interactive.summary": "Click to reveal additional information",
+                "showcase.interactive.content": "This expandable section demonstrates the details/summary elements. Perfect for FAQs, additional information, or progressive disclosure of content.",
+                
+                "demo.title": "Live Demo",
+                "demo.subtitle": "See Typeless.css in Action",
+                "demo.description": "This entire page is styled with Typeless.css! No custom classes were needed for the layout, typography, or components.",
+                "demo.elements": "HTML Elements Showcase:",
+                "demo.typography": "Typography Hierarchy",
+                "demo.heading1": "Heading 1 - Gradient Effect",
+                "demo.heading2": "Heading 2 - With Underline",
+                "demo.heading3": "Heading 3 - Clean & Bold",
+                "demo.heading4": "Heading 4 - Subtle",
+                "demo.heading5": "Heading 5 - Refined",
+                "demo.heading6": "Heading 6 - Small Caps",
+                "demo.paragraph": "Regular paragraph with bold text, italic text, highlighted text, and beautiful links.",
+                "demo.quote": "The best design is invisible – only the content speaks.",
+                "demo.author": "Dieter Rams",
+                "demo.list1": "Beautiful bullet points",
+                "demo.list2": "Perfect spacing",
+                "demo.list3": "Elegant typography",
+                "demo.ol1": "Numbered lists",
+                "demo.ol2": "Mathematical precision",
+                "demo.ol3": "Zero configuration",
+                "demo.code": "and code blocks:",
+                "demo.media": "Media Elements",
+                "demo.images": "Images",
+                "demo.imageDesc": "Beautiful responsive images with automatic styling",
+                "demo.figcaption": "Image with caption using figure and figcaption elements",
+                "demo.video": "Video",
+                "demo.videoFallback": "Your browser doesn't support HTML5 video. Here is a link to the video instead.",
+                "demo.audio": "Audio",
+                "demo.audioFallback": "Your browser doesn't support HTML5 audio.",
+                "demo.forms": "Forms",
+                "demo.formLegend": "Contact Form",
+                "demo.formName": "Name:",
+                "demo.formNamePlaceholder": "Enter your name",
+                "demo.formEmail": "Email:",
+                "demo.formEmailPlaceholder": "your@email.com",
+                "demo.formSubject": "Subject:",
+                "demo.formSubjectDefault": "Choose a subject",
+                "demo.formGeneral": "General Inquiry",
+                "demo.formSupport": "Support",
+                "demo.formFeedback": "Feedback",
+                "demo.formMessage": "Message:",
+                "demo.formMessagePlaceholder": "Your message here...",
+                "demo.formPreferences": "Preferences",
+                "demo.formNewsletter": "Subscribe to newsletter",
+                "demo.formContactEmail": "Contact by email",
+                "demo.formContactPhone": "Contact by phone",
+                "demo.formSubmit": "Send Message",
+                "demo.formReset": "Reset Form",
+                "demo.interactive": "Interactive Elements",
+                "demo.detailsSummary": "Click to expand more information",
+                "demo.detailsContent": "This is additional content that can be shown or hidden. Perfect for FAQ sections, additional details, or collapsible content areas.",
+                "demo.progress": "Progress and Meter",
+                "demo.progressBar": "Progress bar:",
+                "demo.meter": "Meter (gauge):",
+                "demo.datetime": "Data and Time",
+                "demo.event": "The event will be on Christmas Day at 9 AM.",
+                "demo.currentTime": "Current time: 2:30 PM, June 8th, 2025",
+                "demo.address": "Address and Contact",
+                "demo.keyboard": "Keyboard and Code",
+                "demo.keyboardDesc": "Press Ctrl + C to copy, then Ctrl + V to paste.",
+                "demo.consoleLog": "The console.log() function outputs: Hello, World!",
+                "demo.variable": "Use the x variable to store the result of 2 + 2 = 4",
+                "demo.semantic": "Semantic Text Elements",
+                "demo.semanticText": "This text has small text and emphasized text.",
+                "demo.abbr": "HTML and CSS are web technologies.",
+                "demo.formula": "The chemical formula for water is H₂O, and Einstein's famous equation is E=mc².",
+                "demo.editText": "This is inserted text and this is deleted text.",
+                "demo.galleryEnhanced": "Enhanced Image Gallery",
+                "demo.mixedMedia": "Mixed Media Showcase",
+                "demo.portrait": "Portrait Images",
+                "demo.portraitDesc": "Portrait-oriented images work perfectly within the responsive grid system.",
+                "demo.square": "Square Images",
+                "demo.squareDesc": "Square format images maintain their aspect ratio and look great in card layouts.",
+                "demo.panoramic": "Wide Panoramic",
+                "demo.panoramicDesc": "Wide panoramic images stretch beautifully across container widths.",
+                "demo.interactiveMedia": "Interactive Media Elements",
+                "demo.imageMap": "Image with Map Areas",
+                "demo.imageMapDesc": "Image maps allow for interactive clickable areas within images.",
+                
+                "comparison.title": "Framework Comparison",
+                "comparison.caption": "CSS Framework Feature Comparison",
+                "comparison.framework": "Framework",
+                "comparison.size": "Size (Gzipped)",
+                "comparison.classes": "Classes",
+                "comparison.setup": "Setup Time",
+                "comparison.learning": "Learning Curve",
+                "comparison.maintenance": "Maintenance",
+                "comparison.medium": "Medium",
+                "comparison.high": "High",
+                "comparison.steep": "Steep",
+                "comparison.easy": "Easy",
+                "comparison.none": "None",
+                  "proscons.title": "Advantages & Additional Benefits",
+                "proscons.advantages": "Advantages",
+                "proscons.benefits": "Additional Benefits",
+                "proscons.pro1": "Zero learning curve - just write HTML",
+                "proscons.pro2": "Instant beautiful results",
+                "proscons.pro3": "No class naming conflicts",
+                "proscons.pro4": "Smaller bundle sizes",
+                "proscons.pro5": "Perfect for prototyping",
+                "proscons.pro6": "Content-first approach",
+                "proscons.pro7": "Accessibility built-in",
+                "proscons.pro8": "Future-proof semantic HTML",
+                "proscons.pro9": "Professional design out of the box",
+                "proscons.pro10": "Consistent visual hierarchy",
+                "proscons.pro11": "Time-saving development",
+                "proscons.pro12": "Clean, maintainable code",
+                "proscons.benefit1": "Automatic cross-browser compatibility",
+                "proscons.benefit2": "Print-friendly styles included",
+                "proscons.benefit3": "Dark mode ready foundation",
+                "proscons.benefit4": "SEO-friendly semantic structure",
+                "proscons.benefit5": "Easy to customize with CSS variables",
+                "proscons.benefit6": "Works great for blogs and documentation",
+                "proscons.benefit7": "Reduces decision fatigue",
+                "proscons.benefit8": "Perfect for rapid prototyping",
+                
+                "usage.title": "How to Use",
+                "usage.step1": "1. Include the CSS",
+                "usage.step2": "2. Write Semantic HTML",
+                "usage.step3": "3. That's It!",
+                "usage.done": "Your website is now beautifully styled with zero configuration. Add more HTML elements and they'll automatically look great!",
+                
+                "technical.title": "Technical Details",
+                "technical.principles": "Design Principles",
+                "technical.principlesDesc": "Swiss typography, Japanese minimalism, mathematical spacing based on Golden Ratio",
+                "technical.fonts": "Font Stack",
+                "technical.colors": "Color Palette",
+                "technical.colorsDesc": "Monochromatic scale with blue accents, optimized for readability",
+                "technical.spacing": "Spacing System",
+                "technical.spacingDesc": "0.25rem increments with mathematical progression",
+                "technical.breakpoints": "Responsive Breakpoints",
+                "technical.browser": "Browser Support",
+                "technical.browserDesc": "Modern browsers with CSS Grid and Custom Properties support",
+                
+                "download.title": "Get Started",
+                "download.description": "Ready to revolutionize your web development workflow? Download Typeless.css and start building beautiful websites instantly.",
+                "download.button": "Download Typeless.css",
+                "download.copy": "Copy CDN Link",
+                "download.customization": "Customization Options",
+                "download.customDesc": "While Typeless.css works perfectly out of the box, you can customize colors, fonts, and spacing by modifying the CSS custom properties at the top of the file.",
+                
+                "footer.rights": "Open source and free to use.",
+                "footer.tagline": "Zero configuration, maximum impact."
+            },
+              hu: {
+                "header.title": "Typeless.css",
+                "header.subtitle": "Forradalmi Classless CSS Framework",
+                "header.description": "Gyönyörű, modern webdesign egyetlen CSS osztály nélkül. Nulla konfiguráció, maximális hatás.",
+                
+                "overview.title": "Mi az a Typeless.css?",
+                "overview.intro": "A Typeless.css forradalmi megközelítés a webdesignban, amely egyesíti a svájci design precizitását a japán minimalizmussal. Automatikusan stílusoz minden HTML elemet, hogy gyönyörű, professzionális kinézetű weboldalakat hozzon létre CSS osztályok nélkül.",
+                
+                "stats.title": "Statisztikák",
+                "stats.classes": "Szükséges CSS Osztály",
+                "stats.size": "Tömörített Méret",
+                "stats.setup": "Beállítási Idő",
+                "stats.responsive": "Reszponzív",
+                
+                "features.title": "Főbb Jellemzők",
+                "features.typography.title": "Tökéletes Tipográfia",
+                "features.typography.desc": "Matematikai precizitás Arany metszés alapú betűskálával, optimális sormagassággal és prémium betűtípus stackkel.",
+                "features.responsive.title": "Teljesen Reszponzív",
+                "features.responsive.desc": "Mobile-first design, amely minden eszközön tökéletesen néz ki media query konfiguráció nélkül.",
+                "features.modern.title": "Modern Effektek",
+                "features.modern.desc": "Gradient szövegek, sima animációk, 3D hover effektek és elegáns árnyékok beépítve.",
+                "features.semantic.title": "Szemantikus HTML",
+                "features.semantic.desc": "Tiszta, szemantikus HTML5-tel működik. Nincs szükség framework-specifikus jelölésre.",
+                "features.accessibility.title": "Akadálymentesség Először",
+                "features.accessibility.desc": "WCAG megfelelő, megfelelő fókusz állapotokkal, színkontraszttal és képernyőolvasó támogatással.",                "features.performance.title": "Nagy Teljesítmény",
+                "features.performance.desc": "Minimális CSS, optimalizált szelektorok és csökkentett bundle méret villámgyors betöltéshez.",
+                
+                "showcase.title": "Tartalom Bemutató",
+                "showcase.description": "A Typeless.css automatikusan gyönyörűen stílusoz minden HTML elemet. Itt egy átfogó bemutató a különböző tartalomtípusokról és média elemekről.",
+                "showcase.media.title": "Média Elemek",
+                "showcase.images.title": "Képek és Ábrák",
+                "showcase.images.desc": "A képek automatikusan skálázódnak és megtartják az oldalarányokat minden eszközön.",
+                "showcase.images.caption": "Az ábrák feliratokkal tökéletesen stílusozottak szerkesztői tartalmakhoz.",
+                "showcase.multimedia.title": "Videó és Hang",
+                "showcase.multimedia.fallback": "A böngésződ nem támogatja a HTML5 videót.",
+                "showcase.multimedia.audiofallback": "A böngésződ nem támogatja a HTML5 hangot.",
+                "showcase.forms.title": "Űrlapok és Interakciók",
+                "showcase.forms.legend": "Minta Kapcsolati Űrlap",
+                "showcase.forms.name": "Teljes Név:",
+                "showcase.forms.email": "Email Cím:",
+                "showcase.forms.category": "Kategória:",
+                "showcase.forms.general": "Általános Kérdés",
+                "showcase.forms.support": "Technikai Támogatás",
+                "showcase.forms.feedback": "Visszajelzés",
+                "showcase.forms.message": "Üzenet:",
+                "showcase.forms.preferences": "Kapcsolat Beállítások",
+                "showcase.forms.newsletter": "Feliratkozás a hírlevelre",
+                "showcase.forms.contactemail": "Kapcsolat emailen",
+                "showcase.forms.contactphone": "Kapcsolat telefonon",
+                "showcase.forms.submit": "Üzenet Küldése",
+                "showcase.forms.reset": "Űrlap Törlése",
+                "showcase.data.title": "Adat Vizualizáció",
+                "showcase.progress.title": "Haladás és Metrikák",
+                "showcase.progress.loading": "Betöltési haladás:",
+                "showcase.progress.performance": "Teljesítmény pontszám:",
+                "showcase.gallery.title": "Kép Galéria",
+                "showcase.gallery.design1": "Modern UI Design",
+                "showcase.gallery.design2": "Tipográfia Fókusz",
+                "showcase.gallery.design3": "Szín Harmónia",
+                "showcase.gallery.design4": "Layout Tökéletesség",
+                "showcase.semantic.title": "Szemantikus Elemek",
+                "showcase.text.title": "Gazdag Szöveg Elemek",
+                "showcase.text.sample": "Ez a bekezdés különböző inline elemeket mutat be: félkövér szöveg, dőlt hangsúly, kiemelt tartalom, apró betűs szöveg, inline kód, és stílusos linkek.",
+                "showcase.text.technical": "Technikai tartalom: CSS változók mint --primary-color használhatók. Matematikai kifejezések: E=mc², H₂O.",
+                "showcase.text.keyboard": "Billentyű kombinációk: Nyomd meg a Ctrl + S-t a munka mentéséhez.",
+                "showcase.time.title": "Idő és Kapcsolat",
+                "showcase.time.event": "A következő kiadás 2025. július 15-én 10:00-ra van tervezve.",
+                "showcase.contact.address": "123 Design Avenue<br>Web City, Internet 54321",                "showcase.interactive.title": "Interaktív Elemek",
+                "showcase.interactive.summary": "Kattints a további információk felfedéséhez",
+                "showcase.interactive.content": "Ez a kinyitható szekció a details/summary elemeket mutatja be. Tökéletes GYIK szekciókhoz, további információkhoz vagy tartalom fokozatos felfedéséhez.",
+                
+                "demo.title": "Élő Bemutató",
+                "demo.subtitle": "Lásd a Typeless.css-t Működésben",
+                "demo.description": "Ez az egész oldal Typeless.css-sel van stílusozva! Nem voltak szükségesek egyedi osztályok a layouthoz, tipográfiához vagy komponensekhez.",
+                "demo.elements": "HTML Elemek Bemutatása:",
+                "demo.typography": "Tipográfiai Hierarchia",
+                "demo.heading1": "Címsor 1 - Gradiens Effekt",
+                "demo.heading2": "Címsor 2 - Aláhúzással",
+                "demo.heading3": "Címsor 3 - Tiszta és Félkövér",
+                "demo.heading4": "Címsor 4 - Finom",
+                "demo.heading5": "Címsor 5 - Kifinomult",
+                "demo.heading6": "Címsor 6 - Kiskapitális",
+                "demo.paragraph": "Normál bekezdés félkövér szöveggel, dőlt szöveggel, kiemelt szöveggel és gyönyörű linkekkel.",
+                "demo.quote": "A legjobb design láthatatlan – csak a tartalom beszél.",
+                "demo.author": "Dieter Rams",
+                "demo.list1": "Gyönyörű felsorolás pontok",
+                "demo.list2": "Tökéletes térközök",
+                "demo.list3": "Elegáns tipográfia",
+                "demo.ol1": "Számozott listák",
+                "demo.ol2": "Matematikai precizitás",
+                "demo.ol3": "Nulla konfiguráció",
+                "demo.code": "és kód blokkok:",
+                "demo.media": "Média Elemek",
+                "demo.images": "Képek",
+                "demo.imageDesc": "Gyönyörű reszponzív képek automatikus stílusozással",
+                "demo.figcaption": "Kép felirattal figure és figcaption elemek használatával",
+                "demo.video": "Videó",
+                "demo.videoFallback": "A böngésződ nem támogatja a HTML5 videót. Itt egy link a videóhoz helyette.",
+                "demo.audio": "Hang",
+                "demo.audioFallback": "A böngésződ nem támogatja a HTML5 hangot.",
+                "demo.forms": "Űrlapok",
+                "demo.formLegend": "Kapcsolati Űrlap",
+                "demo.formName": "Név:",
+                "demo.formNamePlaceholder": "Add meg a neved",
+                "demo.formEmail": "Email:",
+                "demo.formEmailPlaceholder": "te@email.hu",
+                "demo.formSubject": "Tárgy:",
+                "demo.formSubjectDefault": "Válassz egy tárgyat",
+                "demo.formGeneral": "Általános Kérdés",
+                "demo.formSupport": "Támogatás",
+                "demo.formFeedback": "Visszajelzés",
+                "demo.formMessage": "Üzenet:",
+                "demo.formMessagePlaceholder": "Az üzeneted ide...",
+                "demo.formPreferences": "Beállítások",
+                "demo.formNewsletter": "Feliratkozás hírlevelre",
+                "demo.formContactEmail": "Kapcsolat emailen",
+                "demo.formContactPhone": "Kapcsolat telefonon",
+                "demo.formSubmit": "Üzenet Küldése",
+                "demo.formReset": "Űrlap Törlése",
+                "demo.interactive": "Interaktív Elemek",
+                "demo.detailsSummary": "Kattints a további információk kibontásához",
+                "demo.detailsContent": "Ez további tartalom, ami megjeleníthető vagy elrejthető. Tökéletes GYIK szekciókhoz, további részletekhez vagy összecsukható tartalom területekhez.",
+                "demo.progress": "Haladás és Mérő",
+                "demo.progressBar": "Haladás sáv:",
+                "demo.meter": "Mérő (gauge):",
+                "demo.datetime": "Adat és Idő",
+                "demo.event": "Az esemény Karácsony napján 9 órakor lesz.",
+                "demo.currentTime": "Jelenlegi idő: 14:30, 2025. június 8.",
+                "demo.address": "Cím és Kapcsolat",
+                "demo.keyboard": "Billentyűzet és Kód",
+                "demo.keyboardDesc": "Nyomd meg a Ctrl + C-t másoláshoz, majd Ctrl + V-t beillesztéshez.",
+                "demo.consoleLog": "A console.log() függvény kimenete: Hello, World!",
+                "demo.variable": "Használd az x változót a 2 + 2 = 4 eredmény tárolásához",
+                "demo.semantic": "Szemantikus Szöveg Elemek",
+                "demo.semanticText": "Ez a szöveg kis szöveget és hangsúlyozott szöveget tartalmaz.",
+                "demo.abbr": "A HTML és CSS webes technológiák.",
+                "demo.formula": "A víz kémiai képlete H₂O, Einstein híres egyenlete pedig E=mc².",
+                "demo.editText": "Ez beszúrt szöveg és ez törölt szöveg.",
+                "demo.galleryEnhanced": "Bővített Kép Galéria",
+                "demo.mixedMedia": "Vegyes Média Bemutató",
+                "demo.portrait": "Portré Képek",
+                "demo.portraitDesc": "A portré orientációjú képek tökéletesen működnek a reszponzív rács rendszerben.",
+                "demo.square": "Négyzet Képek",
+                "demo.squareDesc": "A négyzet formátumú képek megtartják oldalarányukat és remekül néznek ki kártya elrendezésekben.",
+                "demo.panoramic": "Széles Panorámikus",
+                "demo.panoramicDesc": "A széles panorámikus képek gyönyörűen nyúlnak szét a konténer szélességében.",
+                "demo.interactiveMedia": "Interaktív Média Elemek",
+                "demo.imageMap": "Kép Térképterületekkel",
+                "demo.imageMapDesc": "A képtérképek lehetővé teszik az interaktív kattintható területeket a képeken belül.",
+                
+                "comparison.title": "Framework Összehasonlítás",
+                "comparison.caption": "CSS Framework Jellemzők Összehasonlítása",
+                "comparison.framework": "Framework",
+                "comparison.size": "Méret (Tömörített)",
+                "comparison.classes": "Osztályok",
+                "comparison.setup": "Beállítási Idő",
+                "comparison.learning": "Tanulási Görbe",
+                "comparison.maintenance": "Karbantartás",
+                "comparison.medium": "Közepes",
+                "comparison.high": "Magas",
+                "comparison.steep": "Meredek",
+                "comparison.easy": "Könnyű",
+                "comparison.none": "Nincs",
+                
+                "proscons.title": "Előnyök és További Előnyök",
+                "proscons.advantages": "Előnyök",
+                "proscons.benefits": "További Előnyök",
+                "proscons.pro1": "Nulla tanulási görbe - csak írj HTML-t",
+                "proscons.pro2": "Azonnali gyönyörű eredmények",
+                "proscons.pro3": "Nincs osztálynév konfliktus",
+                "proscons.pro4": "Kisebb bundle méretek",
+                "proscons.pro5": "Tökéletes prototípusokhoz",
+                "proscons.pro6": "Tartalom-központú megközelítés",
+                "proscons.pro7": "Beépített akadálymentesség",
+                "proscons.pro8": "Jövőálló szemantikus HTML",
+                "proscons.pro9": "Professzionális design azonnal",
+                "proscons.pro10": "Konzisztens vizuális hierarchia",
+                "proscons.pro11": "Időtakarékos fejlesztés",
+                "proscons.pro12": "Tiszta, karbantartható kód",
+                "proscons.benefit1": "Automatikus böngésző kompatibilitás",
+                "proscons.benefit2": "Nyomtatásbarát stílusok mellékelve",
+                "proscons.benefit3": "Sötét mód kész alapok",
+                "proscons.benefit4": "SEO-barát szemantikus struktúra",
+                "proscons.benefit5": "Könnyű testreszabás CSS változókkal",
+                "proscons.benefit6": "Remekül működik blogokhoz és dokumentációhoz",
+                "proscons.benefit7": "Csökkenti a döntési fáradtságot",
+                "proscons.benefit8": "Tökéletes gyors prototípus készítéshez",
+                
+                "usage.title": "Hogyan Használd",
+                "usage.step1": "1. Add Hozzá a CSS-t",
+                "usage.step2": "2. Írj Szemantikus HTML-t",
+                "usage.step3": "3. Ennyi!",
+                "usage.done": "A weboldalad most már gyönyörűen stílusozott nulla konfigurációval. Adj hozzá további HTML elemeket és automatikusan remekül fognak kinézni!",
+                
+                "technical.title": "Technikai Részletek",
+                "technical.principles": "Design Alapelvek",
+                "technical.principlesDesc": "Svájci tipográfia, japán minimalizmus, Arany metszés alapú matematikai térközök",
+                "technical.fonts": "Betűtípus Stack",
+                "technical.colors": "Színpaletta",
+                "technical.colorsDesc": "Monokromatikus skála kék hangsúlyokkal, olvashatóságra optimalizálva",
+                "technical.spacing": "Térköz Rendszer",
+                "technical.spacingDesc": "0.25rem lépések matematikai progresszióval",
+                "technical.breakpoints": "Reszponzív Töréspontok",
+                "technical.browser": "Böngésző Támogatás",
+                "technical.browserDesc": "Modern böngészők CSS Grid és Custom Properties támogatással",
+                
+                "download.title": "Kezdd El",
+                "download.description": "Készen állsz forradalmasítani a webfejlesztési munkafolyamatod? Töltsd le a Typeless.css-t és kezdj el azonnal gyönyörű weboldalakat építeni.",
+                "download.button": "Typeless.css Letöltése",
+                "download.copy": "CDN Link Másolása",
+                "download.customization": "Testreszabási Lehetőségek",
+                "download.customDesc": "Míg a Typeless.css tökéletesen működik azonnal, testreszabhatod a színeket, betűtípusokat és térközöket a fájl tetején található CSS custom properties módosításával.",
+                
+                "footer.rights": "Nyílt forráskódú és ingyenesen használható.",
+                "footer.tagline": "Nulla konfiguráció, maximális hatás."
+            }
+        };
+
+        let currentLanguage = 'en';
+        
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            document.documentElement.lang = lang;
+            
+            // Update button states
+            const btnEn = document.getElementById('btn-en');
+            const btnHu = document.getElementById('btn-hu');
+            
+            if (lang === 'en') {
+                btnEn.setAttribute('aria-pressed', 'true');
+                btnHu.setAttribute('aria-pressed', 'false');
+            } else {
+                btnEn.setAttribute('aria-pressed', 'false');
+                btnHu.setAttribute('aria-pressed', 'true');
+            }
+            
+            // Update all translatable elements
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update page title
+            const titles = {
+                en: 'Typeless.css - Revolutionary Classless CSS Framework',
+                hu: 'Typeless.css - Forradalmi Classless CSS Framework'
+            };
+            document.title = titles[lang];
+        }
+
+        function downloadCSS() {
+            // Create a download link for the CSS file
+            const link = document.createElement('a');
+            link.href = 'Typeless.css';
+            link.download = 'Typeless.css';
+            link.click();
+        }
+
+        function copyLink() {
+            const cdnLink = 'https://cdn.jsdelivr.net/gh/repo/typeless.css';
+            navigator.clipboard.writeText(cdnLink).then(() => {
+                const messages = {
+                    en: 'CDN link copied to clipboard!',
+                    hu: 'CDN link a vágólapra másolva!'
+                };
+                alert(messages[currentLanguage]);
+            });
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            switchLanguage('en');
+        });
+    </script>
+</body>
+</html>

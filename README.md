@@ -74,7 +74,7 @@ A Typeless.css egy forradalmi megközelítés a webdizájnban, amely a svájci d
 ## 🎨 Dizájn filozófia
 
 ### Svájci precizitás
-- Matematikai alapú méretezés (Arany arány)
+- Matematikai alapú méretezés (Golden ratio)
 - Tiszta tipográfiai hierarchia
 - Optimális sormagasság és betűköz
 

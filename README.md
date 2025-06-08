@@ -32,7 +32,7 @@ A Typeless.css egy forradalmi megközelítés a webdizájnban, amely a svájci d
 
 **CDN használata:**
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/repo/typeless.css/Typeless.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vnorman1/typeless.css@master/Typeless_min.css">
 ```
 
 **Helyi fájl letöltése:**

@@ -4,9 +4,15 @@
 
 Gyönyörű, modern webdizájn egyetlen CSS osztály használata nélkül. Nulla konfiguráció, maximális hatás.
 
+![Typeless.css Typography Showcase](1.png)
+*Példa a Typeless.css tipográfiai hierarchiájára és automatikus stílusozására*
+
 ## Mi az a Typeless.css?
 
 A Typeless.css egy forradalmi megközelítés a webdizájnban, amely a svájci dizájn precizitását kombinálja a japán minimalizmussal. Automatikusan stílusoz minden HTML elemet, hogy gyönyörű, professzionális megjelenésű weboldalakat hozzon létre anélkül, hogy bármilyen CSS osztályra szükség lenne.
+
+![Typeless.css Framework Overview](2.png)
+*A Typeless.css keretrendszer bemutatása - tiszta HTML, gyönyörű eredmény*
 
 ## ✨ Főbb jellemzők
 
@@ -192,6 +198,9 @@ A Typeless.css egy forradalmi megközelítés a webdizájnban, amely a svájci d
 ```
 
 ## 🔧 Testreszabás
+
+![Typeless.css Customization Options](3.png)
+*Egyszerű testreszabási lehetőségek CSS változókkal*
 
 ### CSS változók
 A Typeless.css CSS Custom Properties-t használ, amelyek könnyedén felülírhatók:
